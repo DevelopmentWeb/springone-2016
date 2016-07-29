@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: data-ingest
+spec:
+  replicas: 1
+  selector:
+    name: data-ingest
+  template:
+    metadata:
+      labels:
+        name: data-ingest
+    spec:
+      containers:
+      - name: data-ingest
+        image: trisberg/data-ingest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPRING_APPLICATION_JSON
+          value: '{"spring.hadoop.fsUri":"hdfs://hadoop-demo-m:8020 ","spring.cloud.stream.kafka.binder.brokers":"${KAFKA_SERVICE_HOST}:${KAFKA_SERVICE_PORT}","spring.cloud.stream.kafka.binder.zkNodes":"${ZK_SERVICE_HOST}:${ZK_SERVICE_PORT}","spring.cloud.deployer.kubernetes.memory":"640Mi"}'
