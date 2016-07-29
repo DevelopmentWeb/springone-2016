@@ -1,7 +1,7 @@
 # springone-2016
 Spring and Big Data examples and slides for SpringOne Platform 2016 in Las Vegas
 
-## Configuring and starting service needed to run demos
+## Configuring and starting services needed to run demos
 
 ### Vagrant hadoop-install
 
