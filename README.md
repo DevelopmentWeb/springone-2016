@@ -14,6 +14,6 @@ Spring and Big Data examples and slides for SpringOne Platform 2016 in Las Vegas
 
 ### 'spotify/kafka' docker image
 
-export KAFKA_HOST=<your-local-ip-address>
-docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=$KAFKA_HOST --env ADVERTISED_PORT=9092 spotify/kafka
+    export KAFKA_HOST=<your-local-ip-address>
+    docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=$KAFKA_HOST --env ADVERTISED_PORT=9092 spotify/kafka
 
