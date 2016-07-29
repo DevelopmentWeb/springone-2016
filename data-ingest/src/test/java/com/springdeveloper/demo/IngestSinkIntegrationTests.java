@@ -87,7 +87,8 @@ public class IngestSinkIntegrationTests {
 		assertTrue(files.length > 0);
 		File dataFile = files[0];
 		assertNotNull(dataFile);
-		Assert.assertThat(readFile(dataFile.getPath(), Charset.forName("UTF-8")), equalTo("Foo\nBar\nBaz\n"));
+		Assert.assertThat(readFile(dataFile.getPath(), 
+				Charset.forName("UTF-8")), equalTo("Foo\nBar\nBaz\n"));
 	}
 
 	private String readFile(String path, Charset encoding) throws IOException {
