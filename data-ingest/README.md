@@ -9,7 +9,7 @@ Spring Boot app for HDFS ingestion
 
 ### Start Hadoop and Kafka
 
-Follow instructions here [https://github.com/trisberg/springone-2016/blob/master/README.md](https://github.com/trisberg/springone-2016/blob/master/README.md)
+Follow instructions here [Configuring and starting services needed to run demos](/README.md#configuring-and-starting-services-needed-to-run-demos)
 
 ### Run local with:
 
