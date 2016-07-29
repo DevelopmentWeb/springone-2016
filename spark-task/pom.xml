@@ -29,7 +29,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud.task.app</groupId>
 			<artifactId>spring-cloud-starter-task-spark-yarn</artifactId>
-			<version>1.0.0.BUILD-SNAPSHOT</version>
+			<version>1.0.0.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -43,25 +43,12 @@
 			<dependency>
 				<groupId>org.springframework.cloud.task.app</groupId>
 				<artifactId>spring-cloud-task-app-dependencies</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/libs-milestone</url>
-		</repository>
-		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
-		</repository>
-	</repositories>
 
 	<build>
 		<plugins>
