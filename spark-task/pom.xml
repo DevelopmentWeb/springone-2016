@@ -29,7 +29,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud.task.app</groupId>
 			<artifactId>spring-cloud-starter-task-spark-yarn</artifactId>
-			<version>1.0.1.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
