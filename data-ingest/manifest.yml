@@ -1,0 +1,13 @@
+applications:
+- name: data-ingest
+  instances: 1
+  memory: 256M
+  disk_quota: 512M
+  host: data-ingest
+  domain: local.pcfdev.io
+  env:
+    SPRING_APPLICATION_JSON: '{"spring.hadoop.fsUri":"${vcap.services.hadoop.credentials.fs.defaultFS}"}'
+  services:
+  - rabbit
+  - hadoop
+  stack: cflinuxfs2
